@@ -1,0 +1,58 @@
+@font-face {
+    font-family: PlayfairDisplaySC;
+    src: url(./fonts/PlayfairDisplaySC-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vidaloka;
+    src: url(./fonts/Vidaloka-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    background-color: #eceee7;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: PlayfairDisplaySC;
+    position: relative;
+}
+
+main{
+    // display: block;
+    // width: 100vw;
+    padding: 0 8px;
+}
+
+.rm-primary-nav{
+    align-items: center;
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    padding: 0 16px;
+    a{
+        text-decoration: none;
+    }
+    
+    .rm-hamburger{
+        height: 24px;
+        width: 24px;
+        min-width: 24px;
+        background: orange;
+        display: block;
+    }
+    
+    .rm-nav-items{
+        display: none;
+    }
+
+    .rm-nav-title{
+        color: #314444;
+        font-family: Vidaloka, sans-serif;
+        font-size: 12px;
+    }
+}
