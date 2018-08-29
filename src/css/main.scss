@@ -1,15 +1,33 @@
 @font-face {
     font-family: Montserrat;
-    src: url(./fonts/Montserrat-Medium.ttf);
+    src: url(./fonts/Merriweather/Merriweather-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Playfair;
+    src: url(./fonts/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Playfair;
+    src: url(./fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vidaloka;
+    src: url(./fonts/Vidaloka/Vidaloka-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 body{
-    background-color: #00ebf4;
+    background-color: #2fba8b;
+    font-size: 1em;
     margin: 0;
     padding: 0;
-    font-family: Montserrat, sans-serif;
     position: relative;
 }
 .sidebar{
@@ -18,21 +36,25 @@ body{
     top: 0;
     left: 0;
     height: 100vh;
-    width: 64vw;
+    width: 72vw;
     background-color: #FFF;
     z-index: 2;
     transform: translateX(-100%);
     transition: all 0.2s ease-out;
     box-shadow: 0 0 0 #000;
 }
+.container{
+    padding: 16px;
+}
 main{
     border-radius: 0;
     box-shadow: 0 0 #000;
     transform: scale(1) translate(0%, 0%);
     background-color: rgb(238, 238, 238);
-    padding: 16%;
     transition: all 0.2s ease-out;
     transform-origin: right center;
+    padding-top: 10vh;
+    margin: 0;
 }
 #hamburger{
     height: 40px;
@@ -61,20 +83,61 @@ main{
         }
     }
 }
-img{
-    margin: auto;
-    width: 50vw;
-    display: block;
+.rm-primary-header{
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 1;
+    .rm-primary-nav{
+        display: block;
+        flex-grow: 1;
+        text-align: right;
+    }
+    .rm-menu-item{
+        display: none;
+    }
+    .rm-title{
+        color: #314444;
+        font-size: 2rem;
+        font-family: Vidaloka, serif;
+        padding: 0 24px;
+        text-decoration: none;
+    }
 }
 
-h1{
-    text-decoration: underline;
-    // background-image: url(../img/bg.jpg);
+.rm-big-title{
+    color: #314444;
+    font-family: Playfair,serif;
+    font-weight: bold;
+    font-size: 12rem;
+    line-height: 12rem;
+    padding-top: 8vh;
+    &__wrapper{
+        margin: auto;
+        width: 43rem;
+        text-align: center;
+    }
+    &__sub{
+        font-family: Playfair, serif;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+.rm-green-block{
+    margin-top: 24vh;
+    height: 30vh;
+    background-color: #2fba8b;
 }
 
-code{
-    font-size: 18px;
-    color: white;
-    background: rgb(1, 1, 56); 
-    padding: 0 8px;
+.rm-footer{
+    display: flex;
+    flex-direction: column;
 }
