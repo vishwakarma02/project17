@@ -1,2 +1,6 @@
 import '../css/main.scss';
-console.log('main.js it is');
+import Sidebar from './sidebar';
+
+window.onload = function(){
+    Sidebar();
+}

@@ -1,58 +1,80 @@
 @font-face {
-    font-family: PlayfairDisplaySC;
-    src: url(./fonts/PlayfairDisplaySC-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: Vidaloka;
-    src: url(./fonts/Vidaloka-Regular.ttf);
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat-Medium.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
-html{
-    background-color: #eceee7;
-    font-size: 16px;
-}
 body{
+    background-color: #00ebf4;
     margin: 0;
     padding: 0;
-    font-family: PlayfairDisplaySC;
+    font-family: Montserrat, sans-serif;
     position: relative;
 }
-
+.sidebar{
+    border-radius: 0 8px 8px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 64vw;
+    background-color: #FFF;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: all 0.2s ease-out;
+    box-shadow: 0 0 0 #000;
+}
 main{
-    // display: block;
-    // width: 100vw;
-    padding: 0 8px;
+    border-radius: 0;
+    box-shadow: 0 0 #000;
+    transform: scale(1) translate(0%, 0%);
+    background-color: rgb(238, 238, 238);
+    padding: 16%;
+    transition: all 0.2s ease-out;
+    transform-origin: right center;
+}
+#hamburger{
+    height: 40px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div{
+        height: 4px;
+        width: 100%;
+        background: black;
+        border-radius: 2px;
+        transform: rotate(0) scale(1) translate(0, 0);
+        transition: all 0.5s ease-out;
+    }
+    &.show{
+        div{
+            &:nth-child(1){
+                transform: rotate(-34deg) scale(.6) translate(-60%,-138%);
+                height: 6px;
+            }
+            &:nth-child(3){
+                transform: rotate(34deg) scale(.6) translate(-60%, 138%);
+                height: 6px;
+            }
+        }
+    }
+}
+img{
+    margin: auto;
+    width: 50vw;
+    display: block;
 }
 
-.rm-primary-nav{
-    align-items: center;
-    display: flex;
-    height: 72px;
-    justify-content: space-between;
-    padding: 0 16px;
-    a{
-        text-decoration: none;
-    }
-    
-    .rm-hamburger{
-        height: 24px;
-        width: 24px;
-        min-width: 24px;
-        background: orange;
-        display: block;
-    }
-    
-    .rm-nav-items{
-        display: none;
-    }
+h1{
+    text-decoration: underline;
+    // background-image: url(../img/bg.jpg);
+}
 
-    .rm-nav-title{
-        color: #314444;
-        font-family: Vidaloka, sans-serif;
-        font-size: 12px;
-    }
+code{
+    font-size: 18px;
+    color: white;
+    background: rgb(1, 1, 56); 
+    padding: 0 8px;
 }
