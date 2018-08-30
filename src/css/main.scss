@@ -1,8 +1,14 @@
 @font-face {
-    font-family: Montserrat;
+    font-family: Merriweather;
     src: url(./fonts/Merriweather/Merriweather-Regular.ttf);
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: Merriweather;
+    src: url(./fonts/Merriweather/Merriweather-Italic.ttf);
+    font-weight: normal;
+    font-style: italic;
 }
 @font-face {
     font-family: Playfair;
@@ -24,120 +30,169 @@
 }
 
 body{
-    background-color: #2fba8b;
-    font-size: 1em;
+    background-color: #030303;
     margin: 0;
     padding: 0;
     position: relative;
 }
-.sidebar{
-    border-radius: 0 8px 8px 0;
+
+.rm-sidebar{
     position: absolute;
     top: 0;
-    left: 0;
+    left: -75vw;
+    width: 75vw;
     height: 100vh;
-    width: 72vw;
-    background-color: #FFF;
-    z-index: 2;
-    transform: translateX(-100%);
-    transition: all 0.2s ease-out;
-    box-shadow: 0 0 0 #000;
-}
-.container{
-    padding: 16px;
-}
-main{
-    border-radius: 0;
-    box-shadow: 0 0 #000;
-    transform: scale(1) translate(0%, 0%);
-    background-color: rgb(238, 238, 238);
-    transition: all 0.2s ease-out;
-    transform-origin: right center;
-    padding-top: 10vh;
-    margin: 0;
-}
-#hamburger{
-    height: 40px;
-    width: 60px;
+    background: #eceee7;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    div{
-        height: 4px;
-        width: 100%;
-        background: black;
-        border-radius: 2px;
-        transform: rotate(0) scale(1) translate(0, 0);
-        transition: all 0.5s ease-out;
+    box-shadow: 0 0 64px #0000005e;
+    transition: all 0.2s ease-out;
+    &__header{
+        background-color: #030303;
+        color: #eceee7;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        padding: 0 24px;
+        font-family: Playfair, serif;
+        font-weight: bold;
+        h2,h3{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        h3{
+            font-size: 0.8rem;
+            font-weight: normal;
+        }
     }
-    &.show{
-        div{
-            &:nth-child(1){
-                transform: rotate(-34deg) scale(.6) translate(-60%,-138%);
-                height: 6px;
-            }
-            &:nth-child(3){
-                transform: rotate(34deg) scale(.6) translate(-60%, 138%);
-                height: 6px;
-            }
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        a{
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            text-decoration: none;
+            font-family: Playfair, serif;
         }
     }
 }
+
+
 .rm-primary-header{
-    box-sizing: border-box;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    background-color: #eceee7;
+    border-bottom: 1px solid #030303;
     display: flex;
-    width: 100vw;
-    height: 10vh;
     align-items: center;
-    padding: 0 24px;
-    z-index: 1;
-    .rm-primary-nav{
-        display: block;
-        flex-grow: 1;
-        text-align: right;
+    justify-content: space-around;
+    padding: 0 16px;
+    height: 10vh;
+    &__wrapper{
+        background-color: #eceee7;
     }
-    .rm-menu-item{
-        display: none;
+    .hamburger{
+        display: flex;
+        height: 12px;
+        width: 18px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4px;
+        border-radius: 4px;
+        transition: all 0.2s ease-out;
+        div{
+            background-color: #030303;
+            height: 2px;
+            width: 100%;
+        }
     }
     .rm-title{
-        color: #314444;
-        font-size: 2rem;
-        font-family: Vidaloka, serif;
-        padding: 0 24px;
-        text-decoration: none;
+        font-family: Vidaloka;
+        text-align: right;
+        flex-grow: 1;
+        font-size: 0.875rem;
     }
 }
 
-.rm-big-title{
-    color: #314444;
-    font-family: Playfair,serif;
-    font-weight: bold;
-    font-size: 12rem;
-    line-height: 12rem;
-    padding-top: 8vh;
-    &__wrapper{
-        margin: auto;
-        width: 43rem;
-        text-align: center;
-    }
-    &__sub{
-        font-family: Playfair, serif;
-        font-weight: bold;
-        font-size: 2rem;
-    }
-}
-.rm-green-block{
-    margin-top: 24vh;
-    height: 30vh;
-    background-color: #2fba8b;
-}
-
-.rm-footer{
+.rm-gray-band{
+    height: 10rem;
+    background-color: #eceee7;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    .rm-title__wrapper{
+        text-align: right;
+        font-family: Playfair, serif;
+        h2,h3{
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            font-size: 4rem;
+        }
+        h3{
+            font-size: 0.8rem;
+            position: relative;
+            top: -12px;
+        }
+    }
+}
+
+.rm-green-band{
+    background-color: #2fba8b;
+    height: 13rem;
+}
+
+footer{
+    background-color: #030303;
+    padding: 24px 0;
+    .rm-book{
+        &__wrapper{
+            width: 196px;
+            margin: auto;
+            color: #eceee7;
+            font-family: Merriweather, serif;
+            font-style: italic;
+        }
+        &-cover{
+            background-image: url('../img/bc@2x.png');
+            background-size: cover;
+            height: 106px;
+            width: 196px;
+            margin: 8px 0 16px 0; 
+        }
+        &-title{
+            font-size: 0.875rem;
+        }
+
+    }
+
+    .footer-view-all{
+        font-family: Merriweather, serif;
+        font-style: italic;
+        font-size: 0.875rem;
+        color: #eceee7;
+        text-decoration: none;
+        &:hover,
+        &:focus{
+            text-decoration: underline;
+        }
+    }
+
+    .rm-about__wrapper{
+        p{
+            color: #eceee7;
+            font-family: Merriweather, serif;
+            font-size: 0.87rem;
+            line-height: 1.75rem;
+        }
+        align-self: auto;
+    }
 }
