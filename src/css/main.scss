@@ -95,6 +95,10 @@ body{
     justify-content: space-around;
     padding: 0 16px;
     height: 10vh;
+    @media (min-width: 1024px){
+        max-width: 992px;
+        margin: auto;
+    }
     &__wrapper{
         background-color: #eceee7;
     }
@@ -112,54 +116,137 @@ body{
             height: 2px;
             width: 100%;
         }
+        @media (min-width: 768px){
+            display: none;
+        }
     }
     .rm-title{
         font-family: Vidaloka;
         text-align: right;
+        text-decoration: none;
+        color: #030303;
         flex-grow: 1;
+        font-size: 0.75rem;
+        @media (min-width: 768px){
+            flex-grow: initial;
+            padding-top: 2px;
+        }
+    }
+    .rm-menu-item{
+        display: none;
+        text-decoration: none;
+        color: #030303;
         font-size: 0.875rem;
+        font-family: Playfair,serif;
+        font-weight: normal;
+        @media (min-width: 768px){
+            display: flex;
+        }
+        &__wrapper{
+            display: none;
+            width: 40%;
+            justify-content: space-around;
+            @media (min-width: 768px){
+                display: flex;
+            }
+        }
     }
 }
 
 .rm-gray-band{
-    height: 10rem;
+    height: 38vh;
     background-color: #eceee7;
     display: flex;
     align-items: center;
     justify-content: center; 
+    @media (min-width: 768px){
+        height: 25vh;
+    }
     .rm-title__wrapper{
         text-align: right;
         font-family: Playfair, serif;
+        position: relative;
+        @media (min-width: 992px){
+            top: 9vh;
+        }
         h2,h3{
+            color: #314444;
             margin: 0;
             padding: 0;
         }
         h2{
             font-size: 4rem;
+            @media (min-width: 768px){
+                font-size: 8rem;
+            }
+            @media (min-width: 992px){
+                font-size: 14.75rem;
+            }
         }
         h3{
             font-size: 0.8rem;
             position: relative;
             top: -12px;
+            @media (min-width: 768px){
+                font-size: 1rem;
+                top: -24px;
+                left: -12px;
+            }
+            @media (min-width: 768px){
+                font-size: 1.25rem;
+            }
         }
     }
 }
 
 .rm-green-band{
     background-color: #2fba8b;
-    height: 13rem;
+    height: 8rem;
+    @media (min-width: 768px){
+        height: 30vh;
+    }
 }
 
 footer{
-    background-color: #030303;
-    padding: 24px 0;
+    background-color: hsl(0, 0%, 1%);
+    padding: 0 0 24px 0;
+    position: relative;
+    .rm-footer__content{
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin: auto;
+        box-sizing: border-box;
+        // position: relative;
+        @media (min-width: 768px){
+            width: 768px;
+            flex-direction: row;
+            padding: 0 24px;
+            flex-wrap: wrap;
+        }
+        @media (min-width: 992px){
+            width: 992px;
+        }
+        @media (min-width: 1200px){
+            width: 1200px;
+            flex-wrap: nowrap;
+        }
+    }
     .rm-book{
         &__wrapper{
+            order: 2;
             width: 196px;
             margin: auto;
             color: #eceee7;
             font-family: Merriweather, serif;
             font-style: italic;
+            margin-top: 4rem;
+            @media (min-width: 1200px){
+                order: initial;
+            }
+            @media (min-width: 1200px){
+                width: 358px;
+            }
         }
         &-cover{
             background-image: url('../img/bc@2x.png');
@@ -191,8 +278,45 @@ footer{
             color: #eceee7;
             font-family: Merriweather, serif;
             font-size: 0.87rem;
-            line-height: 1.75rem;
+            line-height: 2;
+            margin: 0 0 16px 0;
+            padding: 0;
         }
-        align-self: auto;
+        margin: auto;
+        padding: 0 24px;
+        @media (min-width: 768px){
+            padding: 0 0;
+        }
+        @media (min-width: 1200px){
+            width: 358px;
+        }
+        &__content{
+            @media (min-width: 768px){
+                width: 60%;
+                margin: -15px auto 0 auto;
+            }
+            @media (min-width: 1200px){
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+    .rm-img-wrapper{
+        margin: -8.92rem auto 0 auto;
+        width: 60%;
+        @media (min-width: 768px){
+            // top: -28rem;
+            margin: -20rem auto 0;
+        }
+        @media (min-width: 992px){
+            margin: -26.4rem auto 0;
+        }
+        @media (min-width: 1200px){
+            margin: -35vh auto 0;
+            width: 50%;
+        }
+        img{
+            width: 100%;
+        }
     }
 }
