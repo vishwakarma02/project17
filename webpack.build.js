@@ -61,9 +61,12 @@ module.exports = merge(common, {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'assets/images'
+                    }
+                }]
             },
             {
                 test: /\.svg$/,
@@ -71,9 +74,12 @@ module.exports = merge(common, {
             },
             {
                  test: /\.(woff|woff2|eot|ttf|otf)$/,
-                 use: [
-                   'file-loader'
-                 ]
+                 use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'assets/fonts'
+                    }
+                }]
             },
             {
                 test: /\.js$/,

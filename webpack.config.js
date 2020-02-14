@@ -36,9 +36,12 @@ module.exports = merge(common, {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: [
-                    'file-loader'
-                ]
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'assets/images'
+                    }
+                }]
             },
             {
                 test: /\.svg$/,
@@ -46,9 +49,12 @@ module.exports = merge(common, {
             },
             {
                  test: /\.(woff|woff2|eot|ttf|otf)$/,
-                 use: [
-                   'file-loader'
-                 ]
+                 use: [{
+                   loader: 'file-loader',
+                   options: {
+                       outputPath: 'assets/fonts'
+                   }
+                }]
             },
             {
                 //converting ES6 into ES5 to get support from IE also
@@ -57,7 +63,7 @@ module.exports = merge(common, {
                     {
                         loader: 'babel-loader',
                         options: {
-                            presets: ['es2015']
+                            presets: ['es2015'],
                         }
                     }
                 ]

@@ -162,7 +162,7 @@ eval("\n\n/**\n * When source maps are enabled, `style-loader` uses a link eleme
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"a41ba7b1760546d2396349c85a7d96a7.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Merriweather/Merriweather-Italic.ttf?");
+eval("module.exports = __webpack_require__.p + \"assets/fonts/a41ba7b1760546d2396349c85a7d96a7.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Merriweather/Merriweather-Italic.ttf?");
 
 /***/ }),
 
@@ -173,7 +173,7 @@ eval("module.exports = __webpack_require__.p + \"a41ba7b1760546d2396349c85a7d96a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"f96a44b40f99ae4b63f275f1142f7c98.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Merriweather/Merriweather-Regular.ttf?");
+eval("module.exports = __webpack_require__.p + \"assets/fonts/f96a44b40f99ae4b63f275f1142f7c98.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Merriweather/Merriweather-Regular.ttf?");
 
 /***/ }),
 
@@ -184,7 +184,7 @@ eval("module.exports = __webpack_require__.p + \"f96a44b40f99ae4b63f275f1142f7c9
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"70411fcb5f728dd858c916adee3ce0ac.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf?");
+eval("module.exports = __webpack_require__.p + \"assets/fonts/70411fcb5f728dd858c916adee3ce0ac.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Playfair_Display_SC/PlayfairDisplaySC-Bold.ttf?");
 
 /***/ }),
 
@@ -195,7 +195,7 @@ eval("module.exports = __webpack_require__.p + \"70411fcb5f728dd858c916adee3ce0a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"0b245014684dc4a1c82f60e12bb73b94.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf?");
+eval("module.exports = __webpack_require__.p + \"assets/fonts/0b245014684dc4a1c82f60e12bb73b94.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf?");
 
 /***/ }),
 
@@ -206,7 +206,7 @@ eval("module.exports = __webpack_require__.p + \"0b245014684dc4a1c82f60e12bb73b9
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"035277b21f0395ac3826ca0519fd2319.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Vidaloka/Vidaloka-Regular.ttf?");
+eval("module.exports = __webpack_require__.p + \"assets/fonts/035277b21f0395ac3826ca0519fd2319.ttf\";\n\n//# sourceURL=webpack:///./src/css/fonts/Vidaloka/Vidaloka-Regular.ttf?");
 
 /***/ }),
 
@@ -239,7 +239,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"611daa4eff6061acf906eedcb0626c2e.png\";\n\n//# sourceURL=webpack:///./src/img/bc@2x.png?");
+eval("module.exports = __webpack_require__.p + \"assets/images/611daa4eff6061acf906eedcb0626c2e.png\";\n\n//# sourceURL=webpack:///./src/img/bc@2x.png?");
 
 /***/ }),
 

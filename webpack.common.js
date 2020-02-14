@@ -30,7 +30,7 @@ module.exports = {
             chunks: ['main']
         }),
         new HtmlWebpackPlugin({
-            filename: 'contact.html',
+            filename: 'pages/contact.html',
             template: path.join(__dirname, 'src', 'contact.html'),
             minify: {
                 //can add more options
